@@ -2,8 +2,18 @@ import styled from "styled-components";
 
 export const Home = () => {
   const HomeSection = styled.div`
+    /* width: 1200px; */
+    margin: 0 auto;
     height: 80px;
     /* background-color: red; */
+    position: relative;
+    /* background-color: aqua; */
+  `;
+  const ConBoxWrap = styled.div`
+    width: 1200px;
+    height: 100%;
+    /* background-color: chartreuse; */
+    margin: 0 auto;
     position: relative;
   `;
   const ConBox = styled.div`
@@ -12,14 +22,15 @@ export const Home = () => {
     /* background-color: rebeccapurple; */
     display: flex;
     position: absolute;
-    right: 340px;
+    right: 0;
     display: flex;
     justify-content: space-around;
+    /* background-color: purple; */
   `;
   const Box = styled.div`
     width: 230px;
     height: 80px;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     /* background-color: #5d2724; */
     background-color: ${(props) => props.$bgColor || "#5d2724"};
     border-radius: 40px 40px 0 40px;
@@ -144,37 +155,39 @@ export const Home = () => {
   return (
     <>
       <HomeSection>
-        <ConBox>
-          <a href="https://www.ut.ac.kr/kor.do">
-            <Box>
-              <TextWarp>
-                <TextOne>국립한국교통대학교</TextOne>
-                <TextTwo>홈페이지</TextTwo>
-              </TextWarp>
+        <ConBoxWrap>
+          <ConBox>
+            <a href="https://www.ut.ac.kr/kor.do">
+              <Box>
+                <TextWarp>
+                  <TextOne>국립한국교통대학교</TextOne>
+                  <TextTwo>홈페이지</TextTwo>
+                </TextWarp>
 
-              <Icon>
-                <img
-                  src="https://www.ut.ac.kr/html/intro/files/ico_arr_big.png"
-                  alt="오른쪽_화살표"
-                ></img>
-              </Icon>
-            </Box>
-          </a>
-          <a href="https://www.ut.ac.kr/ipsi.do">
-            <Box $bgColor="#004D99">
-              <TextWarp>
-                <TextOne>국립한국교통대학교입학</TextOne>
-                <TextTwo>홈페이지</TextTwo>
-              </TextWarp>
-              <Icon>
-                <img
-                  src="https://www.ut.ac.kr/html/intro/files/ico_arr_big.png"
-                  alt="오른쪽_화살표"
-                ></img>
-              </Icon>
-            </Box>
-          </a>
-        </ConBox>
+                <Icon>
+                  <img
+                    src="https://www.ut.ac.kr/html/intro/files/ico_arr_big.png"
+                    alt="오른쪽_화살표"
+                  ></img>
+                </Icon>
+              </Box>
+            </a>
+            <a href="https://www.ut.ac.kr/ipsi.do">
+              <Box $bgColor="#004D99">
+                <TextWarp>
+                  <TextOne>국립한국교통대학교입학</TextOne>
+                  <TextTwo>홈페이지</TextTwo>
+                </TextWarp>
+                <Icon>
+                  <img
+                    src="https://www.ut.ac.kr/html/intro/files/ico_arr_big.png"
+                    alt="오른쪽_화살표"
+                  ></img>
+                </Icon>
+              </Box>
+            </a>
+          </ConBox>
+        </ConBoxWrap>
       </HomeSection>
       <HomeSectionTwo>
         <img

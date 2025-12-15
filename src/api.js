@@ -1,6 +1,6 @@
 // 📂 api.js
 
-const API_ENDPOINT = "http://localhost:8000/chat";
+const API_ENDPOINT = "https://university-website-8a5s.onrender.com/chat";
 
 export async function sendChatMessage(messageText) {
   try {
